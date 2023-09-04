@@ -1,0 +1,617 @@
+const flowersByState = [
+    {
+        state: "Alabama",
+        flowers: [
+            {
+                name: "American Beautyberry",
+                photo: "",
+                type: "Woody shrub, deciduous",
+                nativeTo: "Southeastern US",
+                Season: " Blooms through June-August with berries August-September",
+            },
+            {
+                name: "Buttonbush",
+                photo: "",
+            },
+            {
+                name: "Frogfruit",
+                photo: "",
+            },
+            {
+                name: "Frostweed",
+                photo: "",
+            },
+            {
+                name: "Gulf Muhly",
+                photo: "",
+            },
+            {
+                name: "Inland Sea Oats",
+                photo: "",
+            },
+            {
+                name: "Turk's Cap",
+                photo: "",
+            },
+            {
+              name: "Scarlet Sage",
+              photo: "",
+            },
+                        {
+              name: "Cardinal Flower",
+              photo: "",
+            },
+                        {
+              name: "Blazing Star",
+              photo: "",
+            }
+        ],
+    },
+    {
+        state: "Alaska",
+        flowers: [
+            {
+                name: "Liverleaf Wintergreen",
+                photo: "",
+            },
+            {
+                name: "Early Blueberry",
+                photo: "",
+            },
+            {
+                name: "Fools Huckleberry",
+                photo: "",
+            },
+            {
+                name: "Northern Bog Rosemary",
+                photo: "",
+            },
+            {
+                name: "Bog Laurel",
+                photo: "",
+            },
+            {
+                name: "Wild Flag Iris",
+                bn: "Iris Setosa"
+                photo: "",
+            },
+            {
+                name: "Spiraea",
+                bn: "Spirara Stevenii",
+                photo: "",
+            },
+            {
+                name: "Shrubby Cinquefoil",
+                bn: "Dasiphora Fruticosa",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "Arizona",
+        flowers: [
+            {
+                name: "Buttonbush",
+                photo: "",
+            },
+            {
+                name: "Gregg's Mistflower",
+                photo: "",
+            },
+            {
+                name: "Inland Sea Oats",
+                photo: "",
+            },
+            {
+                name: "Pigeonberry",
+                photo: "",
+            },
+            {
+                name: "Sunflower",
+                bn: "Helianthus annuus",
+                photo: "",
+            },
+                        {
+                name: "Rabbitbrush",
+                bn: "Chrysothamnus Viscidiflorus",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "Arkansas",
+        flowers: [
+            {
+                name: "American Beautyberry",
+                photo: "",
+                type: "Woody shrub, deciduous",
+                nativeTo: "Southeastern US",
+                Season: " Blooms through June-August with berries August-September",
+            },
+            {
+                name: "Buttonbush",
+                photo: "",
+            },
+            {
+                name: "Frogfruit",
+                photo: "",
+            },
+            {
+                name: "Frostweed",
+                photo: "",
+            },
+            {
+                name: "Gulf Muhly",
+                photo: "",
+            },
+            {
+                name: "Inland Sea Oats",
+                photo: "",
+            },
+            {
+                name: "Turk's Cap",
+                photo: "",
+            },
+            {
+                name: "Pigeonberry",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "California",
+        flowers: [
+            {
+                name: "Buttonbrush",
+                photo: "",
+            },
+            {
+                name: "Frogfruit",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "Colorado",
+        flowers: [
+            {
+                name: "Frogfruit",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "Connecticut",
+        flowers: [
+            {
+                name: "Buttonbush",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "Delaware",
+        flowers: [
+            {
+                name: "Buttonbush",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "Florida",
+        flowers: [
+            {
+                name: "American Beautyberry",
+                photo: "",
+            },
+            {
+                name: "Buttonbush",
+                photo: "",
+            },
+            {
+                name: "Bluebonnets",
+                photo: "",
+            },
+            {
+                name: "Frogfruit",
+                photo: "",
+            },
+            {
+                name: "Frostweed",
+                photo: "",
+            },
+            {
+                name: "Gulf Muhly",
+                photo: "",
+            },
+            {
+                name: "Inland Sea Oats",
+                photo: "",
+            },
+            {
+                name: "Pigeonberry",
+                photo: "",
+            },
+            {
+                name: "Turk's Cap",
+                photo: "",
+            },
+        ],
+    },
+    {
+        state: "Georgia",
+        flowers: [
+            {
+                name: "American Beautyberry",
+                photo: "",
+            },
+            {
+                name: "Buttonbush",
+                photo: "",
+            },
+            {
+                name: "Frogfruit",
+                photo: "",
+            },
+            {
+                name: "Frostweed",
+                photo: "",
+            },
+            {
+                name: "Gulf Muhly",
+                photo: "",
+            },
+            {
+                name: "Inland Sea Oats",
+                photo: "",
+            },
+            {
+                name: "Turk's Cap",
+                photo: "",
+            },
+        ],
+  },
+  {
+    state: "Hawaii",
+    flowers: [
+      {
+        name: "Pua Kala",
+        photo: "",
+      },
+      {
+        name: "Hapu'u",
+        photo: "",
+      },
+      {
+        name: "'Aiakanene",
+        photo: "",
+      },
+      {
+        name: "Kou",
+        photo: "",
+      },
+      {
+        name: "Old World Forkedfern",
+        photo: "",
+      },
+      {
+        name: "Florida Hopbush",
+        photo: "",
+      },
+      {
+        name: "Hinahina",
+        photo: "",
+      },
+      {
+        name: "Ma'o Hau Hele",
+        photo: "",
+      }
+    ]
+  },
+  {
+    state: "Idaho",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Illinois",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Indiana",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Iowa",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Kansas",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Kentucky",
+    flowers: [
+      {
+        name: "Buttonbush",
+        photo: "",
+      },
+      {
+        name: "Frostweed",
+        photo: "",
+      },
+      {
+        name: "Frogfruit",
+        photo: "",
+      }
+    ]
+  },
+  {
+    state: "Louisiana",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Maine",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Maryland",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Massachusetts",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Michigan",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Minnesota",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Mississippi",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Missouri",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Montana",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Nebraska",
+    flower: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "New Hampshire",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "New Jersey",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "New Mexico",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "New York",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Nevada",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "North Carolina",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Ohio",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Oklahoma",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Oregon",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Pennsylvania",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Rhode Island",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "South Carolina",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "South Dakota",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Tennessee",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Texas",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Utah",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Vermont",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Virginia",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Washington",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "West Virginia",
+    flowers: [
+      {
+
+      }
+    ]
+  },
+  {
+    state: "Wisconsin",
+    flowers: [
+      {
+
+      }
+    ]
+  }
+];
