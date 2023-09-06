@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+background-color: #EDEDED;
+}
+
+nav {
+  background-color: #778B7E;
+}
+
+.display {
+  background-color: #cadbd0;
+}
